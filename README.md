@@ -28,10 +28,10 @@ Print detailed information about each server, including the following :
 - Bedrock Ip
 - Max Players
 - Online Players
-- If its Feutured
+- If its Featured
 - Short Description
 - Logo/Icon link
-- Feutured Image link
+- Featured Image link
 - Background Image link
 - Server Location
 - Server Badges
