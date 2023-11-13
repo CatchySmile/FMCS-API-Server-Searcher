@@ -3,26 +3,37 @@ import urllib.request, json
 def print_server_info(server):
     print(f"Server ID: {server.get('id', 'N/A')}")
     print(f"Server Name: {server.get('name', 'N/A')}")
-    print(f"IP Address: {server.get('javaAddress', 'N/A')}")
+    print(f"Default IP Address: {server.get('javaAddress', 'N/A')}")
     print(f"Java Port: {server.get('javaPort', 'N/A')}")
+    print(f"Java Address: {server.get('javaAddress', 'N/A')}")
     print(f"Bedrock Port: {server.get('bedrockPort', 'N/A')}")
+    print(f"Bedrock Address: {server.get('bedrockAddress', 'N/A')}")
     print(f"Max Players: {server.get('currentMaxPlayers', 'N/A')}")
     print(f"Online Players: {server.get('currentOnlinePlayers', 'N/A')}")
     print(f"Is Featured: {server.get('isFeatured', 'N/A')}")
     print(f"Short Description: {server.get('shortDescription', 'N/A')}")
-    
+    print(f"Total Votes: {server.get('votes', 'N/A')}")
+    print(f"Votes Last 30 Days: {server.get('votesLast30Days', 'N/A')}")
+    print(f"Gamer Safer Service: {server.get('gamerSaferService', 'N/A')}")
+
     icon_image = server.get('iconImage', {})
     print(f"Icon Image Link: {icon_image.get('url', 'N/A') if icon_image else 'N/A'}")
-    
+
+    background_image = server.get('backgroundImage', {})
+    print(f"Background Image Link: {background_image.get('url', 'N/A') if background_image else 'N/A'}")
+
+    featured_image = server.get('featuredImage', {})
+    print(f"Featured Image Link: {featured_image.get('url', 'N/A') if featured_image else 'N/A'}")
+
     locations = server.get('serverLocation', [])
     print(f"Location: {', '.join([location.get('name', 'N/A') for location in locations]) if locations else 'N/A'}")
-    
+
     badges = server.get('serverBadges', [])
     print(f"Badges: {', '.join([badge.get('name', 'N/A') for badge in badges]) if badges else 'N/A'}")
-    
+
     languages = server.get('serverLanguage', [])
     print(f"Language: {', '.join([language.get('name', 'N/A') for language in languages]) if languages else 'N/A'}")
-    
+
     keywords = server.get('serverTags', [])
     print(f"Keywords: {', '.join([keyword.get('name', 'N/A') for keyword in keywords]) if keywords else 'N/A'}")
 
@@ -58,3 +69,4 @@ try:
         print(f"Error: {response.getcode()} - {response.read().decode('utf-8')}")
 except Exception as e:
     print(e)
+input("Press Enter to exit...")
