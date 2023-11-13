@@ -1,3 +1,4 @@
+  [![HitCount](https://hits.dwyl.com/CatchySmile/https://githubcom/CatchySmile/FMCS-API-Server-Searcher.svg?style=flat-square&show=unique)](http://hits.dwyl.com/CatchySmile/https://githubcom/CatchySmile/FMCS-API-Server-Searcher)
 # FMCS-API-Server-Searcher
 A simple Python Script for querying information about Minecraft servers from the findmcserver.com API.
 
