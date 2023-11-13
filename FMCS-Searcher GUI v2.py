@@ -115,7 +115,7 @@ class App:
         self.search_button = ttk.Button(master, text="Search", command=self.search)
         self.search_button.pack(pady=10)
 
-        self.output_text = scrolledtext.ScrolledText(master, wrap=tk.WORD, width=80, height=20, bg='#333333', fg='#ffffff')
+        self.output_text = scrolledtext.ScrolledText(master, wrap=tk.WORD, width=80, height=33, font=('Helvetica', 8), bg='#333333', fg='#ffffff')
         self.output_text.pack(pady=20)
 
     def search(self):
