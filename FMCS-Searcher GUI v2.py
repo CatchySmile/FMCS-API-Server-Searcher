@@ -1,4 +1,5 @@
 import tkinter as tk
+from tkinter import scrolledtext, ttk
 import urllib.request
 import json
 import logging
@@ -6,7 +7,7 @@ import logging
 # Configure logging
 logging.basicConfig(filename='FMCS-output.log', level=logging.INFO)
 
-def print_server_info(server, log_enabled):
+def print_server_info(server, log_enabled, output_widget):
     output = []
     output.append("-----------------------------------")
     output.append("===================================")
@@ -54,14 +55,13 @@ def print_server_info(server, log_enabled):
 
     output.append("===================================")
 
-    if log_enabled:
-        for line in output:
+    for line in output:
+        if log_enabled:
             logging.info(line)
-    else:
-        for line in output:
-            print(line)
+        else:
+            output_widget.insert(tk.END, line + '\n')
 
-def search_servers(search_term, log_enabled):
+def search_servers(search_term, log_enabled, output_widget):
     try:
         url = f"https://findmcserver.com/api/servers?pageNumber=0&pageSize=15000&sortBy=random&keywords={search_term}"
 
@@ -80,7 +80,7 @@ def search_servers(search_term, log_enabled):
 
             if isinstance(data.get('data'), list):
                 for server in data['data']:
-                    print_server_info(server, log_enabled)
+                    print_server_info(server, log_enabled, output_widget)
             else:
                 print("Unexpected response format.")
         else:
@@ -92,26 +92,37 @@ class App:
     def __init__(self, master):
         self.master = master
         master.title("FindMcServers GUI")
+        master.configure(bg='#333333')
+
+        style = ttk.Style()
+        style.configure('TButton', foreground='#333333', background='#555555')
+        style.configure('TLabel', foreground='#ffffff', background='#333333')
+        style.configure('TCheckbutton', foreground='#ffffff', background='#333333')
+        style.configure('Horizontal.TProgressbar', troughcolor='#333333', background='#aaaaaa')
 
         self.log_var = tk.BooleanVar()
         self.log_var.set(False)  # Default to not logging
 
-        self.label = tk.Label(master, text="Enter the server search term:")
-        self.label.pack()
+        self.label = ttk.Label(master, text="Enter the server search term:")
+        self.label.pack(pady=10)
 
-        self.search_entry = tk.Entry(master)
-        self.search_entry.pack()
+        self.search_entry = ttk.Entry(master)
+        self.search_entry.pack(pady=10)
 
-        self.log_checkbox = tk.Checkbutton(master, text="Log results to FMCS-output.log instead of console", variable=self.log_var)
-        self.log_checkbox.pack()
+        self.log_checkbox = ttk.Checkbutton(master, text="Log results to FMCS-output.log instead of console", variable=self.log_var)
+        self.log_checkbox.pack(pady=10)
 
-        self.search_button = tk.Button(master, text="Search", command=self.search)
-        self.search_button.pack()
+        self.search_button = ttk.Button(master, text="Search", command=self.search)
+        self.search_button.pack(pady=10)
+
+        self.output_text = scrolledtext.ScrolledText(master, wrap=tk.WORD, width=80, height=20, bg='#333333', fg='#ffffff')
+        self.output_text.pack(pady=20)
 
     def search(self):
         search_term = self.search_entry.get()
         log_enabled = self.log_var.get()
-        search_servers(search_term, log_enabled)
+        self.output_text.delete(1.0, tk.END)  # Clear previous output
+        search_servers(search_term, log_enabled, self.output_text)
 
 root = tk.Tk()
 app = App(root)
