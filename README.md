@@ -13,8 +13,11 @@ A simple Python Script for querying information about Minecraft servers from the
 
 ## Downloads
 GUI Version HERE --> https://github.com/CatchySmile/FMCS-API-Server-Searcher/files/13331369/FMCS-Searcher.GUI.v1.4.zip <--
+
 NOGUI Version HERE --> https://github.com/CatchySmile/FMCS-API-Server-Searcher/files/13331370/FMCS-Searcher.NO.GUI.v1.4.zip <--
+
 GUI + NOGUI Version HERE --> https://github.com/CatchySmile/FMCS-API-Server-Searcher/files/13331371/FMCS-Searcher.GUI.%2B.NO.GUI.1.4.zip <--
+
 ## Introduction
 
 This Python script retrieves information about Minecraft servers using the findmcserver.com API. It provides detailed information about each server, including server ID, name, IP address, port, description and more.
