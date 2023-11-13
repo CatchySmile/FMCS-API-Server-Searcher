@@ -12,11 +12,11 @@ A simple Python Script for querying information about Minecraft servers from the
 - [Contributing](#contributing)
 
 ## Downloads
-GUI Version HERE --> https://github.com/CatchySmile/FMCS-API-Server-Searcher/files/13331369/FMCS-Searcher.GUI.v1.4.zip <--
+GUI Version HERE --> [FMCS-Searcher.GUI.v1.4.zip](https://github.com/CatchySmile/FMCS-API-Server-Searcher/files/13331369/FMCS-Searcher.GUI.v1.4.zip) <--
 
-NOGUI Version HERE --> https://github.com/CatchySmile/FMCS-API-Server-Searcher/files/13331370/FMCS-Searcher.NO.GUI.v1.4.zip <--
+NOGUI Version HERE --> [FMCS-Searcher.NO.GUI.v1.4.zip](https://github.com/CatchySmile/FMCS-API-Server-Searcher/files/13331370/FMCS-Searcher.NO.GUI.v1.4.zip) <--
 
-GUI + NOGUI Version HERE --> https://github.com/CatchySmile/FMCS-API-Server-Searcher/files/13331371/FMCS-Searcher.GUI.%2B.NO.GUI.1.4.zip <--
+GUI + NOGUI Version HERE --> [FMCS-Searcher.NOGUI+GUI.v1.4.zip](https://github.com/CatchySmile/FMCS-API-Server-Searcher/files/13331371/FMCS-Searcher.GUI.%2B.NO.GUI.1.4.zip) <--
 
 ## Introduction
 
