@@ -29,11 +29,15 @@ Print detailed information about each server, including the following :
 - If its Feutured
 - Short Description
 - Logo/Icon link
+- Feutured Image link
+- Background Image link
 - Server Location
 - Server Badges
 - Server Language
 - Servers Keywords
-
+- If its a Gamer Safe Service
+- Total Votes
+- Total Votes in Last 30 days
 ## Usage
 
 Download & Run the release file OR do the following :
