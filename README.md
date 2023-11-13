@@ -36,6 +36,8 @@ Print detailed information about each server, including the following :
 
 ## Usage
 
+Download & Run the release file OR do the following :
+
 1. **Clone the Repository:**
    ```bash
    git clone https://github.com/your-username/minecraft-server-api-client.git
