@@ -23,7 +23,9 @@ Print detailed information about each server, including the following :
 - Server Name
 - IP Address
 - Java Port
+- Java Ip
 - Bedrock Port
+- Bedrock Ip
 - Max Players
 - Online Players
 - If its Feutured
