@@ -3,6 +3,7 @@ A simple Python Script for querying information about Minecraft servers from the
 
 ## Table of Contents
 
+- [Download](#Downloads)
 - [Introduction](#introduction)
 - [Features](#features)
 - [Usage](#usage)
@@ -10,13 +11,18 @@ A simple Python Script for querying information about Minecraft servers from the
 - [Configuration](#configuration)
 - [Contributing](#contributing)
 
+## Downloads
+GUI Version HERE --> https://github.com/CatchySmile/FMCS-API-Server-Searcher/files/13331369/FMCS-Searcher.GUI.v1.4.zip <--
+NOGUI Version HERE --> https://github.com/CatchySmile/FMCS-API-Server-Searcher/files/13331370/FMCS-Searcher.NO.GUI.v1.4.zip <--
+GUI + NOGUI Version HERE --> https://github.com/CatchySmile/FMCS-API-Server-Searcher/files/13331371/FMCS-Searcher.GUI.%2B.NO.GUI.1.4.zip <--
 ## Introduction
 
-This Python script allows you to retrieve information about Minecraft servers using the findmcserver.com API. It provides detailed information about each server, including server ID, name, IP address, port, and more.
+This Python script retrieves information about Minecraft servers using the findmcserver.com API. It provides detailed information about each server, including server ID, name, IP address, port, description and more.
 
 ## Features
 
 Query Minecraft server information based on a search term.
+
 Print detailed information about each server, including the following :
 
 - Server ID
@@ -57,7 +63,7 @@ pip install -r requirements.txt
 ```py
 python minecraft_server_client.py
 ```
-# Installation
+## Installation
 - Install python 3.9.10 or newer.
 
 ```bash
@@ -66,11 +72,11 @@ cd minecraft-server-api-client
 pip install -r requirements.txt
 ```
 
-# Configuration
+## Configuration
 
-- Open FMCS-Searcher v1.# in a text editor.
-- Replace the empty string in hdr['Ocp-Apim-Subscription-Key'] with your API key **ONLY IF NEEDED**.
+- Open FMCS-Searcher v1.4 in a text editor. **ONLY IF NEEDED**
+- Replace the empty string in hdr['Ocp-Apim-Subscription-Key'] with your API key. **ONLY IF NEEDED**
 A Subscription-Key isnt needed currently, but that may change one day.
 
-# Contributing
+## Contributing
 If you would like to contribute to the project, feel free to open issues or submit pull requests. Your contributions are welcome!
