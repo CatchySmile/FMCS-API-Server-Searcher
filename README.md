@@ -25,7 +25,7 @@ This Python script retrieves information about Minecraft servers using the findm
 
 ## Features
 
-Query Minecraft server information based on a search term.
+Query Minecraft server information based on a search terms & Sorting.
 
 Print detailed information about each server, including the following :
 
