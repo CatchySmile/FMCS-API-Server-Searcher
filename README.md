@@ -56,7 +56,7 @@ Download & Run the release file OR do the following :
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/your-username/minecraft-server-api-client.git
+   git clone https://github.com/CatchySmile/FMCS-API-Server-Searcher/
    cd minecraft-server-api-client
    ```
 **Install Dependencies:**
@@ -71,7 +71,7 @@ python minecraft_server_client.py
 - Install python 3.9.10 or newer.
 
 ```bash
-  git clone https://github.com/your-username/minecraft-server-api-client.git
+  git clone https://github.com/CatchySmile/FMCS-API-Server-Searcher/
 cd minecraft-server-api-client
 pip install -r requirements.txt
 ```
