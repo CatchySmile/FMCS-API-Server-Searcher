@@ -77,8 +77,9 @@ pip install -r requirements.txt
 ```
 
 ## Configuration
+Please Note : Only configure the NOGUI Version if necessary, Aswell as that, the GUI Version has a API Key input, so do not worry about configuration.
 
-- Open FMCS-Searcher v1.4 in a text editor. **ONLY IF NEEDED**
+- Open FMCS-Searcher v1.5 in a text editor. **ONLY IF NEEDED**
 - Replace the empty string in hdr['Ocp-Apim-Subscription-Key'] with your API key. **ONLY IF NEEDED**
 A Subscription-Key isnt needed currently, but that may change one day.
 
