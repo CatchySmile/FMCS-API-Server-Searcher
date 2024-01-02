@@ -1,3 +1,5 @@
+# Outdated.
+
 
 # FMCS-API-Server-Searcher
 A simple Python Script for querying information about Minecraft servers from the findmcserver.com API.
